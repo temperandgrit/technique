@@ -1,0 +1,30 @@
+		    <div id="page-footer-wrapper">
+		      <div id="page-footer">
+		        {.section website}
+		          {.if socialAccounts}
+							<div id="sqs-social"class="social-links sqs-svg-icon--list" data-content-field="connected-accounts">
+								{.repeated section socialAccounts}
+								<a href="{profileUrl}" target="_blank" class="sqs-svg-icon--wrapper {serviceName}">
+									<div>
+										<svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
+											<use class="sqs-use--icon" xlink:href="/universal/svg/social-accounts.svg#{serviceName}-icon"></use>
+											<use class="sqs-use--mask" xlink:href="/universal/svg/social-accounts.svg#{serviceName}-mask"></use>
+										</svg>
+									</div>
+								</a>
+								{.end}
+							</div>
+		          {.end}
+		        {.end}
+		        <squarespace:block-field id="footer-blocks" columns="12" label="Footer Content" />
+		      </div>
+		    </div><!-- page-footer-wrapper -->
+
+
+		  </div>
+		</div> <!-- canvas-wrapper -->
+
+		{squarespace-footers}
+
+	</body>
+</html>
